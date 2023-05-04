@@ -1,0 +1,11 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+<script src="https://assets.codepen.io/127738/MeshSurfaceSampler_20210711.js"></script>
+<script src="https://assets.codepen.io/127738/OBJLoader_20210711.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.131.3/examples/js/controls/TrackballControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.131.3/examples/js/postprocessing/EffectComposer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.131.3/examples/js/postprocessing/RenderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.131.3/examples/js/postprocessing/UnrealBloomPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.131.3/examples/js/shaders/LuminosityHighPassShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.131.3/examples/js/shaders/CopyShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.131.3/examples/js/postprocessing/ShaderPass.js"></script>
+<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
