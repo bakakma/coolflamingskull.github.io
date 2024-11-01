@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Scene with THREE.js</title>
     
-    <!-- load THREE.js -->
+      
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
     
-    <!-- load Post-processing scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/RenderPass.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/EffectComposer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/ShaderPass.js"></script>
@@ -37,8 +37,14 @@
             gl_FragColor = gl_FragColor * texture2D(pointTexture, gl_PointCoord);
         }
     </script>
+    <style>
+        body {
+            margin: 0; 
+            overflow: hidden; 
+        }
+    </style>
 </head>
 <body>
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
 </body>
 </html>
