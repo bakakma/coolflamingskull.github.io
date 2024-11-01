@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>one two</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <title>3D Scene with THREE.js</title>
+    
+    <!-- load THREE.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- load Post-processing scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/postprocessing/ShaderPass.js"></script>
+
     <script type="x-shader/x-vertex" id="vertexshader">
         attribute float size;
         attribute vec3 color;
@@ -25,16 +31,14 @@
     <script type="x-shader/x-fragment" id="fragmentshader">
         uniform sampler2D pointTexture;
         varying vec3 vColor;
+
         void main() {
             gl_FragColor = vec4(vColor, 1.0);
             gl_FragColor = gl_FragColor * texture2D(pointTexture, gl_PointCoord);
         }
     </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.trackballcontrols.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.unrealBloomPass.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.objloader.js"></script>
+</head>
+<body>
     <script src="script.js"></script>
 </body>
 </html>
