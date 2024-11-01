@@ -1,2 +1,2 @@
 # coolflamingskull.github.io
-cool flaming skull (its not my code)
+github pages test (not my code)
