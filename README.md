@@ -1,4 +1,4 @@
-# coolflamingskull.github.io
+# [coolflamingskull.github.io](https://temporalsyntax.github.io/coolflamingskulll/)
 github pages test (not my code)
 
 
